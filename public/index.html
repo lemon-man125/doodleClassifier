@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      @keyframes hoverAnim {
+        from {
+          background-color: #fff;
+          color: black;
+        }
+
+        to {
+          background-color: #f52a67;
+          color: white;
+        }
+      }
+
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background-color: #eee;
+      }
+      button {
+        /* display: block; */
+        width: 25vw;
+        height: 15vh;
+        border-radius: 2rem;
+        font-size: 4rem;
+        background-color: white;
+        stroke-width: 1rem;
+        color: black;
+        font-weight: bolder;
+      }
+      button:hover {
+        cursor: pointer;
+        animation: hoverAnim 0.2s ease-out;
+        background-color: #f52a67;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <a href="drawing.html"><button>Drawing</button></a>
+      <a href="drawingvideo.html"><button>Video Drawing</button></a>
+    </div>
+  </body>
+</html>
